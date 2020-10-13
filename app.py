@@ -245,7 +245,7 @@ def make_marks_time_slider(mini, maxi):
      1483225200: '2017', 1490997600: 'Q2', 1498860000: 'Q3', 1506808800: 'Q4'}
     """
     step = relativedelta.relativedelta(months=+12)
-    start = datetime(year=2011, month=1, day=1)
+    start = datetime(year=2012, month=1, day=1)
     #thirty=[4,6,9,11]
     #if maxi.month==2:
     end = datetime(year=2020, month=2, day=28)
@@ -635,6 +635,7 @@ def update_themes_per_paper_plot(n_value, time_values):
             #"textposition": "auto",
             "type": "bar",
             "name": "aadhaar_based_subsidies",
+             "marker": {"color" : '#B28610'}
         },
         {
             "x": values_sample,
@@ -643,6 +644,7 @@ def update_themes_per_paper_plot(n_value, time_values):
             #"textposition": "auto",
             "type": "bar",
             "name": "aadhaar_based_schemes",
+            "marker": {"color" : '#8286B0'}
         },
         {
             "x": values_sample,
@@ -723,6 +725,7 @@ def update_themes_per_paper_plot(n_value, time_values):
             #"textposition": "auto",
             "type": "bar",
             "name": "crime",
+            "marker": {"color" : '#821600'}
         },
     ]
     boldl=[]
