@@ -337,14 +337,6 @@ LEFT_COLUMN = dbc.Jumbotron(
             },
             value=100,
         ),
-        html.Label("Select a theme", style={"marginTop": 15}, className="lead"),
-        html.P(
-            "(You can use the dropdown or click the barchart on the right)",
-            style={"fontSize": 10, "font-weight": "lighter"},
-        ),
-        dcc.Dropdown(
-            id="themes-drop", clearable=False, style={"marginBottom": 15, "font-size": 12}
-        ),
         html.Label("Select time frame", className="lead"),
         html.Div(dcc.RangeSlider(id="time-window-slider"), style={"marginBottom": 0}),
     ]
